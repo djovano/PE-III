@@ -1,25 +1,14 @@
 const express = require('express');
 const cors = require('cors');
-const db = require('./db');
-const app = express();
+require('dotenv').config();
 
+const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('API funcionando!');
-});
-
-app.get('/animais', (req, res) => {
-  db.query('SELECT * FROM animal', (err, results) => {
-    if (err) {
-      res.status(500).json({ erro: err });
-    } else {
-      res.json(results);
-    }
-  });
-});
+const animalRoutes = require('./routes/animal');
+app.use('/animais', animalRoutes);
 
 app.listen(3001, () => {
-  console.log('Servidor rodando na porta 3001');
+  console.log('🚀 Servidor backend rodando em http://localhost:3001');
 });

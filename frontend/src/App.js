@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import AnimalForm from './components/animalForm';
+import AnimalList from './components/animalList';
 import './App.css';
 
 function App() {
+  const [animalEditando, setAnimalEditando] = useState(null);
+  const [atualizar, setAtualizar] = useState(false);
+
+  const atualizarLista = () => {
+    setAtualizar(!atualizar);
+    setAnimalEditando(null);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: '20px' }}>
+      <h1>Cadastro de Animais</h1>
+      <AnimalForm onSuccess={atualizarLista} animalEditando={animalEditando} />
+      <hr />
+      <AnimalList key={atualizar} onEdit={setAnimalEditando} />
     </div>
   );
 }
