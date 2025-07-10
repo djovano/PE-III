@@ -37,7 +37,7 @@ function AnimalForm({ onSuccess, animalEditando }) {
     <form onSubmit={handleSubmit}>
       <input name="nome" value={form.nome} onChange={handleChange} placeholder="Nome" required />
       <input name="idade" value={form.idade} onChange={handleChange} placeholder="Idade" type="number" required />
-      <input name="especie" value={form.especie} onChange={handleChange} placeholder="Espécie (ID)" type="number" required />
+      <input name="especie" value={form.especie} onChange={handleChange} placeholder="Espécie" required />
       <input name="peso" value={form.peso} onChange={handleChange} placeholder="Peso" type="number" step="0.01" required />
       <button type="submit">{animalEditando ? 'Atualizar' : 'Adicionar'}</button>
     </form>

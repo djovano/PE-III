@@ -26,7 +26,7 @@ function AnimalList({ onEdit }) {
       <ul>
         {animais.map(animal => (
           <li key={animal.id}>
-            <strong>{animal.nome}</strong> | Idade: {animal.idade} | Espécie: {animal.especie} | Peso: {animal.peso}kg
+            <strong>{animal.nome}</strong> | ID: {animal.id} | Idade: {animal.idade} | Espécie: {animal.especie} | Peso: {animal.peso}kg
             <button onClick={() => onEdit(animal)}>Editar</button>
             <button onClick={() => deletar(animal.id)}>Excluir</button>
           </li>

@@ -9,6 +9,9 @@ app.use(express.json());
 const animalRoutes = require('./routes/animal');
 app.use('/animais', animalRoutes);
 
+const vacinaRoutes = require('./routes/vacina');
+app.use('/vacinas', vacinaRoutes);
+
 app.listen(3001, () => {
   console.log('🚀 Servidor backend rodando em http://localhost:3001');
 });
