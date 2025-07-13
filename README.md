@@ -34,10 +34,6 @@ meu-projeto/
 │ │ └── index.js
 └── README.md
 
-yaml
-Copiar
-Editar
-
 ---
 
 ## Como executar o projeto
@@ -56,17 +52,9 @@ Editar
 
 cd backend
 
-csharp
-Copiar
-Editar
-
 2. Instale as dependências:
 
 npm install
-
-bash
-Copiar
-Editar
 
 3. Configure o banco de dados em um arquivo `.env` com o seguinte conteúdo:
 
@@ -76,17 +64,9 @@ DB_PASSWORD=sua_senha
 DB_NAME=sistema_vacinas
 PORT=3001
 
-markdown
-Copiar
-Editar
-
 4. Inicie o servidor:
 
 npx nodemon index.js
-
-yaml
-Copiar
-Editar
 
 ---
 
@@ -97,24 +77,15 @@ Editar
 cd frontend
 
 csharp
-Copiar
-Editar
 
 2. Instale as dependências:
 
 npm install
 
-css
-Copiar
-Editar
 
 3. Inicie a aplicação:
 
 npm start
-
-sql
-Copiar
-Editar
 
 ---
 
@@ -122,7 +93,7 @@ Editar
 
 Crie o banco e as tabelas com os comandos SQL abaixo:
 
-```sql
+```
 CREATE DATABASE sistema_vacinas;
 
 USE sistema_vacinas;
