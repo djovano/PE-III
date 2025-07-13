@@ -18,24 +18,6 @@ O projeto é dividido em duas partes:
 
 ---
 
-## Estrutura de Pastas
-
-meu-projeto/
-├── backend/
-│ ├── index.js
-│ ├── routes/
-│ └── db/
-├── frontend/
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── App.js
-│ │ └── index.js
-└── README.md
-
----
-
 ## Como executar o projeto
 
 ### Requisitos
