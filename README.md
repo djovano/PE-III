@@ -58,8 +58,6 @@ npx nodemon index.js
 
 cd frontend
 
-csharp
-
 2. Instale as dependências:
 
 npm install
@@ -84,7 +82,7 @@ CREATE TABLE Animal (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nome VARCHAR(100),
   idade INT,
-  especie INT,
+  especie   VARCHAR(100),
   peso FLOAT
 );
 
